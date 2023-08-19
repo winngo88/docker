@@ -15,16 +15,24 @@
   *docker run -d -p 8080:80 --name docker-tutorial docker101tutorial*
 Lưu ý: port **8080** là port máy chạy docker, port **80** là port của docker image
 - Bước 4 (option): Chia sẻ docker image
-  *docker tag docker101tutorial winngo88/docker101tutorial*
-  *docker push winngo88/docker101tutorial*
+  - *docker tag docker101tutorial winngo88/docker101tutorial*
+  - *docker push winngo88/docker101tutorial*
+  - 
+
+### Các lệnh căn bản
+- Truy cập Docker image: *docker run --rm -it --entrypoint bash image_name*
+- Thoát docker image: Ctl + C
+- Xem danh sách docker container đang chạy: *docker ps* or *docker ps -a*
+- Kill 1 docker container: *docker stop < the_container_id >*
+- Remove 1 docker container: *docker remove < the_container_id >*
+- Kill và remove 1 docker container: *docker remove -f < the_container_id >*
+- Danh sách image đang có: *docker image ls*
 
 ### Usecase
 - NodeJS:
   - Port mặc định của Node là 3000, khi map port Docker ta ngoài cần lưu ý
 - Python:
   - Lỗi load model hdf5 file: fix bằng cách cài *pip install h5py*
-- Truy cập Docker image: *docker run --rm -it --entrypoint bash image_name*
-
 
 ## Tham khảo
 HỎI DÂN IT
