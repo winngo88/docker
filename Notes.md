@@ -1,2 +1,7 @@
 - Cài WSL (Windows Subsystem for Linux) trước khi cài Docker.
+  - Access the Control Panel on your Windows computer.
+  - Navigate to the "Programs" section and proceed to "Turn Windows features on or off."
+  - Mark the checkboxes corresponding to Windows Subsystem For Linux, Windows Hypervisor Platform and Virtual Machine Platform. After that, click the "OK" button.
+  - Launch PowerShell with Administrator privileges. Enter the following command: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart, and then hit Enter. This action will enable WSL 1.
+  - Install WSL 2 update by running either wsl.exe --install or wsl.exe --update. Execute the command: wsl --set-default-version 2, and press Enter to designate WSL 2 as the default version. To ensure the modifications take effect, restart your computer.
 - Nểu chạy Docker bị lỗi thì mở CMD quyền admin, chạy lệnh **wsl --update**, tắt rồi mở lại Docker
