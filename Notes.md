@@ -1,0 +1,2 @@
+- Cài WSL (Windows Subsystem for Linux) trước khi cài Docker.
+- Nểu chạy Docker bị lỗi thì mở CMD quyền admin, chạy lệnh **wsl --update**, tắt rồi mở lại Docker
